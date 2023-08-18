@@ -1,21 +1,20 @@
-import { Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navegacion } from "@/components/Navegacion";
-import { Inicio, Prensa } from "@/views/Inicio";
+import { Inicio, Prensa } from "@/views";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <div>
           <Navegacion />
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/prensa" element={<Prensa />} />
-            <Route path="/contacto" />
           </Routes>
         </div>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

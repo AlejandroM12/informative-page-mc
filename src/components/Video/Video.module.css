@@ -1,0 +1,18 @@
+.videoSection {
+  width: 100%;
+}
+
+.videoResponsive {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1.77777;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.videoResponsive iframe {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: none;
+}
